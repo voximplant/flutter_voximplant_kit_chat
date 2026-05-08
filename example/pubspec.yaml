@@ -1,0 +1,28 @@
+name: voximplant_kit_chat_example
+description: "Demonstrates how to use the voximplant_kit_chat plugin."
+publish_to: 'none'
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  voximplant_kit_chat:
+    path: ../
+
+  flutter_secure_storage: ^10.0.0
+  shared_preferences: ^2.5.5
+  push: ^3.3.3
+  go_router: ^17.2.3
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true

@@ -1,0 +1,39 @@
+name: voximplant_kit_chat
+description: "The Voximplant Kit Chat SDK allows you to add in-app messaging to your Flutter application with a ready-to-use user experience."
+version: 1.0.0
+homepage: https://voximplant.com/kit
+repository: https://github.com/voximplant/flutter_voximplant_kit_chat
+issue_tracker: https://github.com/voximplant/flutter_voximplant_kit_chat/issues
+topics:
+  - voximplant
+  - chat
+  - messaging
+  - customer-support
+
+screenshots:
+  - description: 'Chat screen on Android'
+    path: screenshots/chat_screen_android.png
+  - description: 'Chat screen on iOS'
+    path: screenshots/chat_screen_ios.png
+
+environment:
+  sdk: ^3.7.0
+  flutter: '>=3.29.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  meta: ^1.9.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  pigeon: ^26.3.4
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.voximplant.voximplant_kit_chat
+        pluginClass: VoximplantKitChatPlugin
+      ios:
+        pluginClass: VoximplantKitChatPlugin

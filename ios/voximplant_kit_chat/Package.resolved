@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "ios-kit-chat-sdk-releases",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/voximplant/ios-kit-chat-sdk-releases.git",
+      "state" : {
+        "revision" : "d05dc2619bcbef6e0e4bd5295a0346c89bfe415d",
+        "version" : "1.2.1"
+      }
+    },
+    {
+      "identity" : "ios-kit-chat-ui-sdk-releases",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/voximplant/ios-kit-chat-ui-sdk-releases.git",
+      "state" : {
+        "revision" : "13d2feb6680d4a872f0d61200bdfb6f9910619bb",
+        "version" : "1.6.0"
+      }
+    }
+  ],
+  "version" : 2
+}

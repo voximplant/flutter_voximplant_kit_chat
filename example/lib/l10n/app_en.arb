@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "region": "Region",
+  "selectRegion": "Select region",
+  "channelUuid": "Channel UUID",
+  "enterChannelUuid": "Enter channel UUID",
+  "token": "Token",
+  "enterToken": "Enter token",
+  "clientId": "Client ID",
+  "enterClientId": "Enter client ID",
+  "openChat": "Open chat",
+  "allowNotifications": "Allow notifications",
+  "fieldCannotBeEmpty": "The field cannot be empty",
+  "invalidValue": "Invalid value",
+  "regionIsNotSelected": "Region is not selected",
+  "errorOfRegistrationOfThePushToken": "Push token registration error",
+  "tryAgain": "Try again",
+  "repeatAttempt": "Attempt in progress…"
+}
