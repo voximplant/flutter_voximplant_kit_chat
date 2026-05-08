@@ -143,7 +143,9 @@ To receive the push notifications for the new messages, you should register a pu
 A push notification token should be obtained on the application side using any 3rd party plugin (for example [`firebase_messaging`](https://pub.dev/packages/firebase_messaging) or [`push`](https://pub.dev/packages/push)) that exposes the following required token types to the flutter API:
 - **Android:** Firebase Cloud Messaging (FCM) tokens.
 - **iOS:** APNs token encoded as a hex string.
-> Note: FCM tokens are not acceptble on iOS. If you use `firebase_messaging`, request the APNs token explicitly using the `FirebaseMessaging.instance.getAPNSToken()` API.
+
+> [!IMPORTANT]
+> FCM tokens are not acceptble on iOS. If you use `firebase_messaging`, request the APNs token explicitly using the `FirebaseMessaging.instance.getAPNSToken()` API.
 
 Once you have a token, register it with the SDK:
 
@@ -169,7 +171,8 @@ To display chat notifications on Android 13+, declare the `POST_NOTIFICATIONS` p
 
 The user must grant this runtime permission for chat notifications to be shown.
 
-> **Note.** The SDK does not request this permission itself — the application is responsible for requesting the permission from the user.
+> [!NOTE]
+> The SDK does not request this permission itself — the application is responsible for requesting the permission from the user.
 
 The SDK provides the handlePushAndroid API that processes the push payload data and shows a new message notification. The notification contains a pending intent that allows to open the chat on the notification tap.
 
@@ -212,7 +215,8 @@ Android strings and icons are not part of `KitChatCustomization`. Override them 
 
 iOS custom icons should be added to the `Images.xcassets` of the host application. Reference each asset by its name through `KitChatIconsIos`.
 
-> **Note.** Apply customization once before opening the chat.
+> [!IMPORTANT]
+> Apply customization once before opening the chat.
 
 ```dart
 const colorScheme = KitChatColorScheme(
