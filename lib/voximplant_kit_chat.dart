@@ -4,57 +4,19 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
+import 'src/authorization_error.dart';
+import 'src/client_data.dart';
 import 'src/customization.dart';
 import 'src/customization_pigeon_adapter.dart';
-import 'src/kit_chat_exception.dart';
+import 'src/exception.dart';
 import 'src/messages.g.dart' as messages;
+import 'src/region.dart';
 
+export 'src/authorization_error.dart';
+export 'src/client_data.dart';
 export 'src/customization.dart';
-export 'src/kit_chat_exception.dart';
-
-/// Account region for a mobile channel.
-enum KitChatRegion { ru, ru2, eu, us, br, kz }
-
-/// Authorization error reported by the Voximplant Kit Chat SDK.
-enum KitChatAuthorizationError {
-  /// Invalid mobile channel UUID.
-  invalidChannelUuid,
-
-  /// Invalid mobile channel token.
-  invalidToken,
-
-  /// Invalid client ID.
-  invalidClientId,
-
-  /// Unknown authorization error.
-  unknown,
-}
-
-/// Customer information that can be displayed in the agent's workspace.
-class KitChatClientData {
-  const KitChatClientData({
-    this.displayName,
-    this.phone,
-    this.avatarUrl,
-    this.email,
-    this.language,
-  });
-
-  /// Customer display name.
-  final String? displayName;
-
-  /// Customer phone number.
-  final String? phone;
-
-  /// Customer avatar URL string.
-  final String? avatarUrl;
-
-  /// Customer email.
-  final String? email;
-
-  /// Customer language.
-  final String? language;
-}
+export 'src/exception.dart';
+export 'src/region.dart';
 
 /// The main entry point of the Voximplant Kit Chat SDK.
 ///
