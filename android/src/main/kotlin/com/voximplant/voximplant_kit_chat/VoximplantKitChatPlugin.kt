@@ -9,10 +9,10 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import androidx.annotation.UiThread
-import com.voximplant.android.kit.chat.core.exceptions.KitConnectionRequiredException
-import com.voximplant.android.kit.chat.core.exceptions.KitInternalException
-import com.voximplant.android.kit.chat.core.exceptions.KitTimeoutException
 import com.voximplant.android.kit.chat.ui.KitChatUi
+import com.voximplant.android.kit.chat.ui.exceptions.KitConnectionRequiredException
+import com.voximplant.android.kit.chat.ui.exceptions.KitInternalException
+import com.voximplant.android.kit.chat.ui.exceptions.KitTimeoutException
 import com.voximplant.android.kit.chat.ui.model.AuthorizationError
 import com.voximplant.android.kit.chat.ui.model.ClientData
 import com.voximplant.android.kit.chat.ui.model.Region

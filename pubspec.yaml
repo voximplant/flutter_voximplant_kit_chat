@@ -1,6 +1,6 @@
 name: voximplant_kit_chat
 description: "The Voximplant Kit Chat SDK allows you to add in-app messaging to your Flutter application with a ready-to-use user experience."
-version: 1.0.0
+version: 1.1.0
 homepage: https://voximplant.com/kit
 repository: https://github.com/voximplant/flutter_voximplant_kit_chat
 issue_tracker: https://github.com/voximplant/flutter_voximplant_kit_chat/issues
