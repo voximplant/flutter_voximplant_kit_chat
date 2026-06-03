@@ -3,7 +3,8 @@ description: "Demonstrates how to use the voximplant_kit_chat plugin."
 publish_to: 'none'
 
 environment:
-  sdk: ^3.7.0
+  sdk: ^3.10.0
+  flutter: '>=3.38.1'
 
 dependencies:
   flutter:
