@@ -4,7 +4,7 @@ The Voximplant Kit Chat SDK allows you to add in-app messaging to your Flutter a
 
 Supported languages: English, Spanish, Portuguese, Russian.
 
-<img src="./screenshots/chat_screen_android.png" width=200> <img src="./screenshots/chat_screen_ios.png" width=208>
+<img src="https://github.com/voximplant/flutter_voximplant_kit_chat/blob/main/screenshots/chat_screen_android.png" width=200> <img src="https://github.com/voximplant/flutter_voximplant_kit_chat/blob/main/screenshots/chat_screen_ios.png" width=208>
 
 ## Supported platforms
 
