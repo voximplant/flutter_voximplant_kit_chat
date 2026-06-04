@@ -257,9 +257,12 @@ listed below in `./<app>/android/app/src/main/res/values/` (and the localized va
 
 | Key                                              | Description                                                                                               |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| `kit_action_close`                               | Localized string that represents the Close action                                                         |
+| `kit_action_open_settings`                       | Localized string that represents the action to open the application's system settings                     |
 | `kit_attachments_pick_file`                      | Localized strings configuration for the document picker action                                            |
 | `kit_attachments_pick_media`                     | Localized strings configuration for the media picker action                                               |
 | `kit_attachments_take_photo`                     | Localized strings configuration for the camera picker action                                              |
+| `kit_camera_permission_text`                     | Localized string that represents the description of the camera access permission                          |
 | `kit_chat_title`                                 | Localized string that represents the chat title                                                           |
 | `kit_connection_state_connecting`                | Localized string for the connecting state                                                                 |
 | `kit_connection_state_offline`                   | Localized string for the offline state                                                                    |
@@ -282,13 +285,13 @@ listed below in `./<app>/android/app/src/main/res/values/` (and the localized va
 | `kit_notification_channel_upload_name`           | Localized string that represents the upload notification channel name                                     |
 | `kit_notification_new_message_content_text`      | Localized string that represents the description text for a new inbound message                           |
 | `kit_notification_new_message_title`             | Localized string that represents the title text for a new inbound message                                 |
+| `kit_notification_upload_progress_title`         | Localized plural string for the upload progress title in a notification                                   |
 | `kit_placeholder_message`                        | Localized string that represents placeholder text for an outbound message                                 |
 | `kit_sender_display_name_agent_unnamed`          | Localized string for the agent’s default display name                                                     |
-| `kit_sender_display_name_bot`                    | Localized string for the bot’s display name                                                     |
+| `kit_sender_display_name_bot`                    | Localized string for the bot’s display name                                                               |
 | `kit_unit_bytes`                                 | Localized string for the bytes unit                                                                       |
 | `kit_unit_kilobytes`                             | Localized string for the kilobytes unit                                                                   |
 | `kit_unit_megabytes`                             | Localized string for the megabytes unit                                                                   |
-| `kit_notification_upload_progress_title`         | Localized plural string for the upload progress title in a notification                                   |
 
 ### Android icons
 
