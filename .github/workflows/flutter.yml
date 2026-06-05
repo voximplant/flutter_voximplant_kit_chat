@@ -45,16 +45,17 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Verify Pigeon code generation
-        run: |
-          dart run pigeon --input pigeons/messages.dart
-          git diff --exit-code
-
       - name: Check formatting
         run: dart format --output=none --set-exit-if-changed .
 
       - name: Analyze code
         run: flutter analyze .
+
+      - name: Verify Pigeon code generation
+        run: |
+          dart run pigeon --input pigeons/messages.dart
+          dart format lib/src/messages.g.dart
+          git diff --exit-code
 
   analyze-example:
     name: Example Lint & Analyze
@@ -75,7 +76,13 @@ jobs:
         run: flutter doctor -v
 
       - name: Install dependencies
+        working-directory: example
         run: flutter pub get
 
+      - name: Check formatting
+        working-directory: example
+        run: dart format --output=none --set-exit-if-changed .
+
       - name: Analyze code
+        working-directory: example
         run: flutter analyze .
