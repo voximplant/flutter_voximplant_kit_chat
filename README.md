@@ -32,7 +32,7 @@ Add the dependency to your application's `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  voximplant_kit_chat: ^1.0.0
+  voximplant_kit_chat: ^1.1.0
 ```
 
 Then run:
