@@ -26,10 +26,9 @@ class CredentialsRepository {
   Future<Credentials> getCredentials() async {
     final prefs = await _prefsFuture;
     final savedRegion = prefs.getString(_regionKey);
-    final region =
-        savedRegion == null
-            ? null
-            : KitChatRegion.values.asNameMap()[savedRegion];
+    final region = savedRegion == null
+        ? null
+        : KitChatRegion.values.asNameMap()[savedRegion];
     String token = '';
 
     try {

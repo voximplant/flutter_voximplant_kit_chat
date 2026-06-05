@@ -101,8 +101,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
 
     final operation = () async {
       await _viewModel.openChat(
-        regionNotSelectedError:
-            AppLocalizations.of(context)!.regionIsNotSelected,
+        regionNotSelectedError: AppLocalizations.of(
+          context,
+        )!.regionIsNotSelected,
       );
     }();
     _openChatOperation = operation;
@@ -206,8 +207,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                 right: 16,
                               ),
                               child: _PushTokenUpdateBanner(
-                                repeatAttemptText:
-                                    AppLocalizations.of(context)!.repeatAttempt,
+                                repeatAttemptText: AppLocalizations.of(
+                                  context,
+                                )!.repeatAttempt,
                               ),
                             )
                           else if (_viewModel.isPushTokenRegistrationError)
@@ -218,12 +220,12 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                 right: 16,
                               ),
                               child: _PushTokenRegistrationErrorBanner(
-                                errorText:
-                                    AppLocalizations.of(
-                                      context,
-                                    )!.errorOfRegistrationOfThePushToken,
-                                tryAgainText:
-                                    AppLocalizations.of(context)!.tryAgain,
+                                errorText: AppLocalizations.of(
+                                  context,
+                                )!.errorOfRegistrationOfThePushToken,
+                                tryAgainText: AppLocalizations.of(
+                                  context,
+                                )!.tryAgain,
                                 onBannerClick:
                                     _viewModel.retryPushTokenRegistration,
                               ),
@@ -248,23 +250,21 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   ),
                                   initialValue: _viewModel.selectedRegion,
                                   decoration: _fieldDecoration(
-                                    hintText:
-                                        AppLocalizations.of(
-                                          context,
-                                        )!.selectRegion,
+                                    hintText: AppLocalizations.of(
+                                      context,
+                                    )!.selectRegion,
                                     hasError: _viewModel.regionError != null,
                                   ),
                                   borderRadius: BorderRadius.circular(8),
-                                  items:
-                                      HomeViewModel.regions
-                                          .map(
-                                            (region) =>
-                                                DropdownMenuItem<KitChatRegion>(
-                                                  value: region,
-                                                  child: Text(region.name),
-                                                ),
-                                          )
-                                          .toList(),
+                                  items: HomeViewModel.regions
+                                      .map(
+                                        (region) =>
+                                            DropdownMenuItem<KitChatRegion>(
+                                              value: region,
+                                              child: Text(region.name),
+                                            ),
+                                      )
+                                      .toList(),
                                   onChanged: _viewModel.onRegionChanged,
                                 ),
                                 _FieldErrorText(
@@ -273,16 +273,16 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   ),
                                 ),
                                 _FieldLabel(
-                                  text:
-                                      AppLocalizations.of(context)!.channelUuid,
+                                  text: AppLocalizations.of(
+                                    context,
+                                  )!.channelUuid,
                                 ),
                                 TextFormField(
                                   controller: _channelUuidController,
                                   decoration: _fieldDecoration(
-                                    hintText:
-                                        AppLocalizations.of(
-                                          context,
-                                        )!.enterChannelUuid,
+                                    hintText: AppLocalizations.of(
+                                      context,
+                                    )!.enterChannelUuid,
                                     hasError:
                                         _viewModel.channelUuidError != null,
                                   ),
@@ -299,10 +299,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                 TextFormField(
                                   controller: _tokenController,
                                   decoration: _fieldDecoration(
-                                    hintText:
-                                        AppLocalizations.of(
-                                          context,
-                                        )!.enterToken,
+                                    hintText: AppLocalizations.of(
+                                      context,
+                                    )!.enterToken,
                                     hasError: _viewModel.tokenError != null,
                                   ),
                                   onChanged: _viewModel.onTokenChanged,
@@ -320,10 +319,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   minLines: 1,
                                   maxLines: 3,
                                   decoration: _fieldDecoration(
-                                    hintText:
-                                        AppLocalizations.of(
-                                          context,
-                                        )!.enterClientId,
+                                    hintText: AppLocalizations.of(
+                                      context,
+                                    )!.enterClientId,
                                     hasError: _viewModel.clientIdError != null,
                                   ),
                                   onChanged: _viewModel.onClientIdChanged,
@@ -343,8 +341,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                   _ButtonsBar(
                     isNotificationPermissionGranted:
                         _viewModel.isNotificationPermissionGranted,
-                    allowNotificationsText:
-                        AppLocalizations.of(context)!.allowNotifications,
+                    allowNotificationsText: AppLocalizations.of(
+                      context,
+                    )!.allowNotifications,
                     openChatText: AppLocalizations.of(context)!.openChat,
                     onRequestPermissionClick: _onRequestPermissionPressed,
                     onOpenChatClick: () {
@@ -390,15 +389,14 @@ class _FieldErrorText extends StatelessWidget {
       height: 18,
       child: Align(
         alignment: Alignment.centerLeft,
-        child:
-            errorText == null
-                ? null
-                : Text(
-                  errorText!,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: appTheme.fieldErrorStyle,
-                ),
+        child: errorText == null
+            ? null
+            : Text(
+                errorText!,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: appTheme.fieldErrorStyle,
+              ),
       ),
     );
   }
