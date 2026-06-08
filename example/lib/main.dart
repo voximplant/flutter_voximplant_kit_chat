@@ -121,9 +121,8 @@ Future<void> main() async {
     routes: <RouteBase>[
       GoRoute(
         path: '/',
-        builder:
-            (context, state) =>
-                HomeScreen(openChatRequestVersion: _openChatRequestVersion),
+        builder: (context, state) =>
+            HomeScreen(openChatRequestVersion: _openChatRequestVersion),
       ),
     ],
     redirect: (context, state) {

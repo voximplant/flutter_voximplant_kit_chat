@@ -108,8 +108,9 @@ class HomeViewModel extends ChangeNotifier {
 
   bool validateCredentials() {
     _regionError = _selectedRegion == null ? CredentialsFieldError.empty : null;
-    _channelUuidError =
-        _channelUuid.isEmpty ? CredentialsFieldError.empty : null;
+    _channelUuidError = _channelUuid.isEmpty
+        ? CredentialsFieldError.empty
+        : null;
     _tokenError = _token.isEmpty ? CredentialsFieldError.empty : null;
     _clientIdError = _clientId.isEmpty ? CredentialsFieldError.empty : null;
 
@@ -149,10 +150,9 @@ class HomeViewModel extends ChangeNotifier {
 
   Future<void> refreshNotificationPermissionStatus() async {
     try {
-      final isEnabled =
-          defaultTargetPlatform == TargetPlatform.iOS
-              ? await _readIOSNotificationPermission()
-              : await Push.instance.areNotificationsEnabled();
+      final isEnabled = defaultTargetPlatform == TargetPlatform.iOS
+          ? await _readIOSNotificationPermission()
+          : await Push.instance.areNotificationsEnabled();
       _setNotificationPermissionGranted(isEnabled);
     } catch (error, stackTrace) {
       debugPrint('Failed to read notification permission status: $error');
