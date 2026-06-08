@@ -6,8 +6,6 @@ on:
       - main
     paths:
       - '**/lib/**'
-      - 'android/**'
-      - 'ios/**'
       - 'pigeons/**'
       - '**/pubspec.yaml'
       - '**/analysis_options.yaml'
@@ -15,8 +13,6 @@ on:
   pull_request:
     paths:
       - '**/lib/**'
-      - 'android/**'
-      - 'ios/**'
       - 'pigeons/**'
       - '**/pubspec.yaml'
       - '**/analysis_options.yaml'
