@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "FlutterFramework", path: "../FlutterFramework"),
-        .package(url: "https://github.com/voximplant/ios-kit-chat-ui-sdk-releases.git", .upToNextMinor(from: "1.6.1")),
+        .package(url: "https://github.com/voximplant/ios-kit-chat-ui-sdk-releases.git", exact: "1.6.1"),
     ],
     targets: [
         .target(
