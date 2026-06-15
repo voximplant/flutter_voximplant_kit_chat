@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 The Voximplant Kit Chat SDK allows you to add in-app messaging to your Flutter application with a ready-to-use user experience.
                        DESC
   s.homepage         = 'https://voximplant.com'
-  s.license          = { :type => 'MIT', :file => '../LICENSE' }
+  s.license          = { :type => 'Apache-2.0', :file => '../LICENSE' }
   s.author           = { 'Voximplant' => 'mobiledev@zingaya.com' }
   s.source           = { :http => 'https://github.com/voximplant/flutter_voximplant_kit_chat/' }
   s.source_files     = 'voximplant_kit_chat/Sources/voximplant_kit_chat/**/*.swift'
