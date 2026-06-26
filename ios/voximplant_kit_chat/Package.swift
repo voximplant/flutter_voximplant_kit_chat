@@ -12,14 +12,12 @@ let package = Package(
         .library(name: "voximplant-kit-chat", targets: ["voximplant_kit_chat"])
     ],
     dependencies: [
-        .package(name: "FlutterFramework", path: "../FlutterFramework"),
         .package(url: "https://github.com/voximplant/ios-kit-chat-ui-sdk-releases.git", exact: "1.6.1"),
     ],
     targets: [
         .target(
             name: "voximplant_kit_chat",
             dependencies: [
-                .product(name: "FlutterFramework", package: "FlutterFramework"),
                 .product(name: "VoximplantKitChatUI", package: "ios-kit-chat-ui-sdk-releases"),
             ],
             resources: [
