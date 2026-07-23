@@ -184,6 +184,7 @@ class VoximplantKitChatPlugin : FlutterPlugin, VoximplantKitChatApi {
         KitChatRegion.US -> Region.US
         KitChatRegion.BR -> Region.BR
         KitChatRegion.KZ -> Region.KZ
+        KitChatRegion.MX -> Region.MX
     }
 
     private fun AuthorizationError.toKitChatAuthorizationError(): KitChatAuthorizationError = when (this) {

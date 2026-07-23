@@ -12,7 +12,7 @@ let package = Package(
         .library(name: "voximplant-kit-chat", targets: ["voximplant_kit_chat"])
     ],
     dependencies: [
-        .package(url: "https://github.com/voximplant/ios-kit-chat-ui-sdk-releases.git", exact: "1.6.1"),
+        .package(url: "https://github.com/voximplant/ios-kit-chat-ui-sdk-releases.git", exact: "1.7.0"),
     ],
     targets: [
         .target(

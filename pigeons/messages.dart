@@ -15,7 +15,7 @@ import 'package:pigeon/pigeon.dart';
     swiftOptions: SwiftOptions(),
   ),
 )
-enum KitChatRegion { ru, ru2, eu, us, br, kz }
+enum KitChatRegion { ru, ru2, eu, us, br, kz, mx }
 
 enum KitChatAuthorizationError {
   invalidChannelUuid,

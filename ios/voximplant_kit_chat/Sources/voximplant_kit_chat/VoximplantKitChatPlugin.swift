@@ -271,6 +271,8 @@ private extension KitChatRegion {
             return .br
         case .kz:
             return .kz
+        case .mx:
+            return .mx
         }
     }
 }

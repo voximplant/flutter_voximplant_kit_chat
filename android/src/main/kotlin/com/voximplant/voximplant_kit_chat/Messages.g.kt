@@ -202,7 +202,8 @@ enum class KitChatRegion(val raw: Int) {
   EU(2),
   US(3),
   BR(4),
-  KZ(5);
+  KZ(5),
+  MX(6);
 
   companion object {
     fun ofRaw(raw: Int): KitChatRegion? {
