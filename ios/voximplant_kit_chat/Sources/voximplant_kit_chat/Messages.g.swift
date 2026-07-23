@@ -186,6 +186,7 @@ enum KitChatRegion: Int {
   case us = 3
   case br = 4
   case kz = 5
+  case mx = 6
 }
 
 enum KitChatAuthorizationError: Int {

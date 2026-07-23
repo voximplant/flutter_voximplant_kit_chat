@@ -181,6 +181,7 @@ class VoximplantKitChat {
       KitChatRegion.us => messages.KitChatRegion.us,
       KitChatRegion.br => messages.KitChatRegion.br,
       KitChatRegion.kz => messages.KitChatRegion.kz,
+      KitChatRegion.mx => messages.KitChatRegion.mx,
     };
   }
 

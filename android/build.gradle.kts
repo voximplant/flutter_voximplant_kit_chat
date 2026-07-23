@@ -34,5 +34,5 @@ project.extensions.configure(org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjec
 }
 
 dependencies {
-    implementation("com.voximplant:android-kit-chat-ui:1.4.0")
+    implementation("com.voximplant:android-kit-chat-ui:1.5.0")
 }
