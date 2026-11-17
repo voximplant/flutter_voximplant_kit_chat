@@ -48,8 +48,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get regionIsNotSelected => 'Region is not selected';
 
   @override
-  String get errorOfRegistrationOfThePushToken =>
-      'Push token registration error';
+  String get errorOfRegistrationOfThePushToken => 'Push token registration error';
 
   @override
   String get tryAgain => 'Try again';

@@ -149,7 +149,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       theme: AppTheme.lightTheme,
       routerConfig: router,
-      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        ...GlobalMaterialLocalizations.delegates,
+      ],
       supportedLocales: AppLocalizations.supportedLocales,
     );
   }
