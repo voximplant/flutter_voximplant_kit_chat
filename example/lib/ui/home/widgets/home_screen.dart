@@ -3,7 +3,7 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:voximplant_kit_chat/voximplant_kit_chat.dart';
 import 'package:voximplant_kit_chat_example/domain/models/credentials_field_error.dart';
 import 'package:voximplant_kit_chat_example/l10n/app_localizations.dart';
