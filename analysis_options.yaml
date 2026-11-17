@@ -9,4 +9,5 @@ analyzer:
     - build/**
     - android/**
     - ios/**
+    - example/**
 
