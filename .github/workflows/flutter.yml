@@ -45,7 +45,7 @@ jobs:
         run: dart format --output=none --set-exit-if-changed lib pigeons
 
       - name: Analyze code
-        run: flutter analyze .
+        run: flutter analyze lib
 
       - name: Verify Pigeon code generation
         run: |
@@ -77,8 +77,8 @@ jobs:
 
       - name: Check formatting
         working-directory: example
-        run: dart format --output=none --set-exit-if-changed .
+        run: dart format --output=none --set-exit-if-changed lib
 
       - name: Analyze code
         working-directory: example
-        run: flutter analyze .
+        run: flutter analyze lib

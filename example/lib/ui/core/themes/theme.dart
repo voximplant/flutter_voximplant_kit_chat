@@ -2,7 +2,7 @@
  * Copyright (c) 2011 - 2026, Voximplant, Inc. All rights reserved.
  */
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'colors.dart';
 
